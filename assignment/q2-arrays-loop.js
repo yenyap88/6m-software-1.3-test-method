@@ -7,13 +7,24 @@
 const studentList = ["Johnson", "Christina", "Michael", "Lina", "Larry", "Michelle", "Bob", "Wilson"]
 
 function printStudentNames(){
-    // Add code here
+   for (i=0; i< studentList.length; i++)
+    console.log (studentList[i]);
 }
 
 printStudentNames();
 
 // Ignore the code below this line
-module.exports = {
-    studentList,
+ // studentList array and printStudentNames function are exported out 
+
+module.exports = {   
+    studentList,          
     printStudentNames
 }
+
+/*Note: 
+module.exports:
+
+module is a special object available in Node.js that represents the current module.
+exports is a property of the module object and is used to export functions, objects, or primitive values from a module.
+
+*/
