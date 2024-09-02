@@ -15,7 +15,7 @@ let databaseCredential = "devuser:password"; //Default for 'env' is DEV
 switch(env){
 
 case "DEV":
-// Nothing is changed
+    databaseCredential = "devuser:password";// Nothing is changed
 break;
 
 case "STAGE":
@@ -23,7 +23,7 @@ case "STAGE":
 break;
 
 case "PROD":
-    databaseCredential ="produser:password"
+    databaseCredential ="produser:password";
     break;
 
 default:
